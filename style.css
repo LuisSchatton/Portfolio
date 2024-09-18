@@ -1,0 +1,465 @@
+html,
+body {
+  margin: 0;
+  font-size: 20px;
+  line-height: 105%;
+  overflow-x: hidden;
+}
+html.start,
+body.start {
+  font-family: "Source Code Pro", monospace;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 405px;
+  background-color: white;
+  background-position: center;
+}
+
+.grid {
+  margin-top: 30px;
+  padding-bottom: 100px;
+  font-family: greycliff-cf, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  grid-auto-rows: minmax(30px, auto);
+  gap: 30px;
+  justify-content: center;
+}
+.grid .h1 {
+  font-family: greycliff-cf, sans-serif;
+  font-size: 65px;
+  font-weight: 600;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 110%;
+}
+.grid .image {
+  width: 30vw;
+}
+.grid .image img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid .finalpic {
+  justify-self: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 62vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.footer {
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  cursor: pointer;
+}
+.footer img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-right: 50px;
+}
+.footer .text {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-family: "Source Code Pro", monospace;
+  margin-right: 10px;
+  font-size: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  margin: auto;
+  background-color: #0e0e0e;
+}
+.button button {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.button a {
+  background-color: #fff;
+  color: black;
+  font-family: "Source Code Pro", monospace;
+  padding: 10px;
+  display: flex;
+  width: 250px;
+  height: 30px;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: inherit;
+}
+
+.buttonClose {
+  background-image: url(src/pics/closebutton.svg);
+  background-repeat: no-repeat, repeat;
+  background-size: 20px;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  margin: 30px;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  border-radius: 100px;
+  border-color: black;
+  cursor: pointer;
+}
+
+/* .buttonClose:hover {
+
+  background-size: 15px;
+
+} */
+.buttonClose:focus-visible {
+  outline: none;
+}
+
+.threejs {
+  display: block;
+  position: inherit;
+  width: 100vw;
+  align-items: center;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.threejs:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.loaded {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 10;
+  pointer-events: none;
+}
+.loaded img {
+  height: 30vh;
+  width: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+.loaded .progress {
+  margin-top: 80vh;
+  position: absolute;
+  color: #fff;
+}
+
+.disappear {
+  -webkit-animation: vanish 1s forwards;
+          animation: vanish 1s forwards;
+}
+
+@-webkit-keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#start {
+  margin: 0;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;
+  z-index: -10;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+#blockerprojekte {
+  position: absolute;
+  display: hidden;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  opacity: 100%;
+  z-index: -1000;
+}
+
+#blocker {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  opacity: 87%;
+}
+
+#instructions {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-font-smoothing: none;
+  font-family: "Source Code Pro", monospace;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+#instructions .instructionsHeader {
+  font-size: 36px;
+  z-index: 1000;
+}
+#instructions .instructionsBottom {
+  font-size: 20px;
+}
+#instructions img {
+  width: 705px;
+  height: 405px;
+  pointer-events: none;
+}
+
+.Labeler {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.Labeler .LabelerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80vh;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  background-color: none;
+  border-style: none;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 10px;
+  color: white;
+}
+
+.disappearLabeler {
+  -webkit-animation: vanishLabeler 1s forwards;
+          animation: vanishLabeler 1s forwards;
+}
+
+@-webkit-keyframes vanishLabeler {
+  100% {
+    z-index: -100;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes vanishLabeler {
+  100% {
+    z-index: -100;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.list-container {
+  display: flex;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 23px;
+}
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0px;
+}
+
+@media (max-width: 850px) {
+  .list-container {
+    display: none;
+    width: 100%;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .list-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    color: aqua;
+    text-align: center;
+  }
+  nav li a {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .list-container.activeButton {
+    display: flex;
+  }
+}
+@media (max-width: 1000px) {
+  html,
+body {
+    width: 100vw;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 80vw;
+    margin-left: 10vw;
+  }
+  .grid .h1 {
+    grid-column-end: 1;
+  }
+  .grid .image {
+    width: 80vw;
+  }
+  .grid .finalpic {
+    grid-column-end: 1;
+    max-width: 80vw;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/png" href="src/pics/angel.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/suz1ieb.css">
+	<link rel="stylesheet" href="/style.css">
+	<title>Luis Schatton Portfolio</title>
+</head>
+
+<body class="start" id="body">
+
+	<style>
+		.mySlides1,
+		.mySlides2 {
+			display: none
+		}
+
+		img {
+			vertical-align: middle;
+		}
+	</style>
+
+	<div class="loaded" id="loaded" style="cursor:default;">
+		
+		<img src="./src/pics/loader.gif" alt="" id="loaded">
+
+		<div class="progress" id="progress"></div>
+
+	</div>
+
+
+	<div class="Labeler disappearLabeler" id="Labeler">
+
+		<div class="LabelerText" id="LabelerText" style="text-decoration-color: #ffffff ;">
+
+		</div>
+
+	</div>
+
+	<div id="start">
+
+		<div id="blocker">
+			<div id="instructions">
+
+				<div class="instructionsHeader">
+					Welcome to my Portfolio! <br> <br>
+					<!-- Click to enter <br> <br> -->
+					To see my projects, walk up to them and click 
+				</div>
+
+				<img src="src/pics/instructions2.gif" alt="">
+
+				<div class="instructionsBottom">
+					Move: W A S D <br />
+					Jump: SPACE <br />
+					Look: MOUSE<br />
+					<br />
+					To return to this screen: <br />
+					Press [ESCAPE]
+
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+		<div id="blockerprojekte">
+
+			<button id="buttonClose" class="buttonClose"></button>
+
+			<!-- Schach -->
+
+			<div id="schach" style="display: none; background-color: black;">
+
+				<div id="test">
+
+					<canvas class="threejs">
+						<script type="module" src="/schach.js"></script>
+					</canvas>
+
+				</div>
+
+
+				<div class="grid">
+
+					<div class="h1">
+						Checkmate
+					</div>
+
+					<div class="text">
+						This is a university project for the course ‘Construction and display’.
+						In this university project, the assignment was to take an everyday object out of its natural
+						environment and bring it to life. I chose a chessboard, since the idea of a living one intrigued
+						me. In this scene, I wanted to show the last, dramatic moment in the fight that chess is
+						normally abstractly depicting. It’s the last move, ending the game.
+
+					</div>
+
+					<div class="text">
+						In this course, I worked with Blender. In the blockout I played around with scale and the camera
+						positions. This was important to get a feeling for how the scene should be constructed, to allow
+						a good readability of the scene and also a dramaturgy that intensifies the moment. The
+						conclusion of these was that the scene setting elements (f. ex. the clock) were best placed on
+						the right, in line with European reading conventions. Then from left to right you can see the
+						acting piece piercing the passive piece, the eyes being further led by the point of the spear.
+					</div>
+
+					<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides1">
+							<img src="src/pics/schach/MagischesSchachRedux.jpg">
+						</div>
+
+						<div class="mySlides1">
+							<img src="src/pics/schach/rüstung.jpg">
+						</div>
+
+						<div class="mySlides1">
+							<img src="src/pics/schach/schachbrett.jpg">
+						</div>
+
+						<div class="mySlides1">
+							<img src="src/pics/schach/schachansicht2redux.jpg">
+						</div>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+					</div>
+
+
+					<div id="text">
+						All of which was to intensify the moment and bring the struggle to life.
+						The different armor and set pieces were designed and modeled by myself, using common box
+						modeling techniques. The Chain mail was made using the at the time completely new geometry nodes
+						(the whole project was made in Blender 2.93). The lighting setup is also quite simple, which
+						really emphasizes the textures on the models. It consists just of a hero light and a supporting
+						ambient light.
+					</div>
+
+					<div id="text">
+
+					</div>
+
+					<img class="finalpic" src="src/pics/schach/SchachbrettBannerRedux.jpg" alt="" loading="lazy">
+
+				</div>
+
+
+			</div>
+
+			<!-- Bapehead -->
+
+			<div id="bapehead" style="display: none; background-color: black;">
+
+
+				<div class="banner"
+					style="background-image: url(src/pics/bapehead/bapeheadbannerredux.jpg); margin-bottom: -30px; background-size: 2000px;">
+				</div>
+
+				<div class="grid">
+
+					<div class="h1">
+						Bapehead
+					</div>
+
+					<div class="text">
+						In this wonderful Workshop led by Raphaël de Courville and Elena Falomo, we worked on enhancing
+						things with augmented reality. Since I’m really interested in Digital and Analog Clothing, I
+						decided to work on one of my clothing items. The
+						item itself, a Crewneck from Bape’s S/S 2020 Collection featuring a print reminiscent of Neo
+						Tokyo from ‘Akira’, one of my favourite movies, features a badge on one of the sleeves
+						containing a QR Code.
+					</div>
+
+					<div class="text">
+						Sadly the code isn’t scannable, so I thought, that this workshop would be the perfect
+						opportunity, to remedy this. Through the very fun prototyping process, which combined physical
+						and digital tools, I quickly landed on an interesting concept. The idea was to create a helmet
+						reminiscent of a motorcycle helmet as a nod to the infamous chase scenes in the movie
+					</div>
+
+
+
+					<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides2">
+							<img src="src/pics/bapehead/cb1redux.jpg" alt="">
+						</div>
+
+						<div class="mySlides2">
+							<img src="src/pics/bapehead/cb2redux.jpg" alt="">
+						</div>
+
+						<div class="mySlides2">
+							<img src="src/pics/bapehead/crewneck.webp" alt="">
+						</div>
+
+						<div class="mySlides2">
+							<img src="src/pics/bapehead/RenderCyberpunkRedux.jpg" alt="">
+						</div>
+
+						<div class="mySlides2">
+							<img src="src/pics/bapehead/qrcode.png" alt="">
+						</div>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+					</div>
+
+
+					<div id="text">
+						I also wanted to add a metal arm as a reference to Tetsuo’s final transformation. To fit with
+						Bapes theme, both were made to look ape-like, so f.ex. arm was planned to look like it came from
+						a cyborg gorilla. Sadly, it had to be scrapped during production, due to the limitations of
+						Spark AR at the time, which only supported 2 Dimensional overlays on the body.
+					</div>
+
+					<div id="text">
+						After modeling, I added the helmet to Spark AR with two little animations I made in Blender. You
+						can switch these out by tapping on the screen while viewing the AR Lens on Instagram. Both of
+						these are holograms, glitching in front of the helmet. I also added an HDRI to simulate the
+						Helmet being actually in Neo Tokyo. If you want to check it out for yourself, you can do so with
+						the QR code at the end of the slideshow.
+					</div>
+
+					<div class="finalpic" style="margin-top: 50px;">
+						<iframe height="700px" src="https://www.youtube.com/embed/9ps0w81M6r8" title="bapehead"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen loading="lazy"></iframe>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- AI -->
+
+			<div id="ai" style="display: none; background-color: black;">
+
+				<div class="banner" style="background-image: url(src/pics/ai/aibanner2.png); margin-bottom: -30px;">
+				</div>
+
+				<div class="grid">
+
+					<div class="h1">
+						Artificial Intelligence
+					</div>
+
+					<div class="text">
+						This is a project for the university course ‘Information design’.
+						AI will be one of the defining technologies of the future. Despite that, most people don’t have
+						a good understanding of these programs and their underlying mechanisms, creating problems where
+						the two clash. That’s why on this project we decided to make AI easy to understand, both its
+						limitations, and its potential as a tool. To do this, we designed a website which aims to
+						explain AI as simple as possible.
+
+					</div>
+
+					<div class="text">
+						To make the issue easily approachable, we designed our helpful guide to this topic: Robbie.
+						He guides the user through the website and the short film explaining the topic. This makes it
+						easy for people of all ages to get into the topic without feeling overwhelmed.
+						He also shows you around all the different possible futures and current applications, as well as
+						shortfalls of the technology.
+
+					</div>
+
+
+					<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides3">
+							<img src="src/pics/ai/machinelearningredux.jpg" alt="">
+						</div>
+
+						<div class="mySlides3">
+							<img src="src/pics/ai/robbiskizzenredux.jpg" alt="">
+						</div>
+
+						<div class="mySlides3">
+							<img src="src/pics/ai/screenshotai2redux.jpg" alt="">
+						</div>
+
+						<div class="mySlides3">
+							<img src="src/pics/ai/neuralnetwork.png" alt="">
+						</div>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+					</div>
+
+
+					<div id="text">
+						Since AI or rather Machine Learning is a technology, that’s already very much in use, we also
+						wanted to add a practical example for the user. That’s why we rebuild one of the oldest ML
+						examples, a number identification neural network. This NN can be trained while in use and is
+						thus able to show a Neural Network in its different training stages. This helps the user get a
+						feel for how important the data set is to the functionality of the Neural Network.
+					</div>
+
+					<div id="text">
+						The project was prototyped in Figma and the Neural Network was build on a local server on the
+						basis of
+						<a href="https://medium.com/data-science-v2-0/a-convolutional-neural-network-based-digit-recognition-web-app-using-python-and-javascript-part-i-10c6d63e7dc0"
+							target="_blank" style="text-decoration-color:#ffffff; color: #ffffff;"> this example</a>
+						. My gratitude goes out to Franto Shajel, for providing the resources to learn about
+						this Neural Network.
+
+					</div>
+
+
+					<div></div>
+
+					<div id="text"> This project was made with Sören Weinstein and Silas Diessner</div>
+
+
+					<div class="finalpic">
+
+						<iframe width="853" height="480" src="https://www.youtube.com/embed/U7HGxpLKRdM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen loading="lazy"></iframe>
+
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+
+			<!-- Ryo Fukui -->
+
+			<div id="ryofukui" style="display: none; background-color: black;">
+
+				<div class="banner" style="background-image: url(src/pics/ryofukui/ryofukuiseite.png);"></div>
+
+				<div class="grid">
+
+					<div class="h1">
+						Ryo Fukui - Early Summer 1976
+					</div>
+
+					<div class="text">
+						This is a university project for the course ‘Audiovisual Design’.
+						Here we have used a systematic approach in combination with different analytical techniques to
+						translate a musical sequence into a semantic system. We chose the free Jazz track ‘Early Summer’
+						by Ryo Fukui to visualize. It’s a piece of free jazz, which transports the listener into another
+						world. To reflect this, we constructed a system, in which the viewer is able to immerse
+						themselves in the piece. This lets the viewer analyze and explore themselves, transforming the
+						song into an interactive experience.
+
+
+					</div>
+
+					<div class="button">
+						<button>
+							<a href="https://ryo-fukui.itmr.dev/" target="_blank"> Check it out! </a>
+						</button>
+					</div>
+
+
+
+					<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+						<!-- Full-width images with number and caption text -->
+						<div class="mySlides4">
+							<img src="src/pics/ryofukui/buch1.jfif" alt="">
+						</div>
+
+						<div class="mySlides4">
+							<img src="src/pics/ryofukui/buch2.jfif">
+						</div>
+
+						<div class="mySlides4">
+							<img src="src/pics/ryofukui/4redux.jpg">
+						</div>
+
+						
+						<div class="mySlides4">
+							<img src="src/pics/ryofukui/1redux.jpg">
+						</div>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+					</div>
+
+
+
+					<div id="text">
+						This was done using various JavaScript techniques. The background for example, is run by its own
+						audio visualization script, transforming its color to the beat of the drums.
+						The spheres are all run via the musics' Soundwave in Blender, which controls their height. Then
+						they were brought into three.js, which allows them to be experienced interactively in the
+						browser. There, you can orbit around the piece as it plays. You can also stop at interesting
+						points in the song, allowing you to see the movement frozen in time.
+
+
+					</div>
+
+					<div id="text">
+						Through the programmatic approach to creating this visualization, it would even be possible to
+						scale the system up to different songs. This makes it a tool, which can be applied to the
+						analysis of a wide variety of different songs, even in other genres.
+					</div>
+
+					<div id="text"> This project was made with Lucie De Hair and <a href="https://antonwendel.com/"
+							target="_blank" style="text-decoration-color:#ffffff; color: #ffffff;"> Anton Wendel</a>.
+					</div>
+
+					<div></div>
+
+					<img class="finalpic" style="max-height: 80vh;" src="src/pics/ryofukui/A1.png" alt="">
+
+				</div>
+
+
+			</div>
+
+
+			<footer id="footer" class="footer">
+				<a class="text" onclick="TerminalPopUp()"> >Contact </a>
+				<a href="https://www.linkedin.com/in/luis-schatton-b97a42225/"> <img src="src/pics/linkedin.svg"
+						alt=""></a>
+			</footer>
+
+			<script>
+				function TerminalPopUp() {
+					let params = `status=no,location=no,toolbar=no,menubar=no,
+        			width=1000,height=700,left=-10,top=-10`;
+
+					open('terminal_contact.html', 'test', params);
+
+					isTerminal = true
+				}
+			</script>
+
+		</div>
+
+		<canvas class="webgl">
+			<script type="module" src="./main.js"></script>
+		</canvas>
+
+		<script>
+			let slideIndex = [1, 1, 1, 1];
+			let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", ]
+			showSlides(1, 0);
+			showSlides(1, 1);
+			showSlides(1, 2);
+			showSlides(1, 3);
+
+			function plusSlides(n, no) {
+				showSlides(slideIndex[no] += n, no);
+			}
+
+			function showSlides(n, no) {
+				let i;
+				let x = document.getElementsByClassName(slideId[no]);
+				if (n > x.length) {
+					slideIndex[no] = 1
+				}
+				if (n < 1) {
+					slideIndex[no] = x.length
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex[no] - 1].style.display = "block";
+			}
+		</script>
+
+
+	</div>
+
+</body>
+
+
+</html>

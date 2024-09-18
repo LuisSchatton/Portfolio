@@ -1,0 +1,81 @@
+body {
+    place-content: center;
+    min-height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h1 {
+    padding-left: 50px;
+    font-size: 1em * 3;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    width: max-content;
+    color: #faebd7;
+    cursor: default;
+}
+
+.text {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    max-width: 800px;
+    font-size: 1em * 1.5;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    color: antiquewhite;
+    text-decoration-color: antiquewhite;
+
+
+    .links {
+
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 800px;
+        position: relative;
+        font-family: 'Source Code Pro', monospace;
+        position: relative;
+        color: antiquewhite;
+        text-decoration-color: antiquewhite;
+        cursor: pointer;
+
+    }
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.footer {
+
+
+    position: fixed;
+    justify-content: right;
+    text-align: right;
+    margin-top: 100px;
+    margin-right: 50px;
+    bottom: 0px;
+    width: 100vw;
+
+
+
+    .backbutton {
+
+        margin-bottom: 50px;
+        margin-right: 100px;
+        font-size: 1em * 1.2;
+        //position: relative;
+        font-family: 'Source Code Pro', monospace;
+        color: antiquewhite;
+        text-decoration-color: antiquewhite;
+        text-decoration: underline;
+
+    }
+}
