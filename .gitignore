@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-#strato
+# Strato
 
-strato.txt
+strato.txt*
